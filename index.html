@@ -64,22 +64,31 @@ and the administrator will contact you if we need any extra information.</h4>
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>
-  aims to help researchers get their work done
-  in less time and with less pain
-  by teaching them basic research computing skills.
-  This hands-on workshop will cover basic concepts and tools,
-  including program design, version control, data management,
-  and task automation.
-  Participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
+<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
+who has data they want to analyze, and no prior computational experience is required. 
+This hands-on workshop teaches basic concepts, skills and tools for working more 
+effectively with data. 
 </p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
+<p>
+  This workshop is hosted by EPCC, Edinburgh Parallel Computing Centre, and organised in collaboration by ARCHER, the Software Sustainability Institute, and UoE Research Data Service.
+</p>
+<p>
+  <a href="http://www.archer.ac.uk">ARCHER</a>, the UK's national
+  supercomputing service, offers training in software development and
+  high-performance computing to scientists and researchers across the
+  UK. As part of our training service we are running a two-day Data
+  Carpentry workshop. 
+</p>
+<p>
+  The <a href="http://www.software.ac.uk">Software Sustanability Institute</a>'s mission is to cultivate better, more sustainable, research software to enable world-class research (<a href="http://softwaresaved.spreadshirt.co.uk/"><em>better software, better research</em></a>). Software is fundamental to research: <a href="http://www.software.ac.uk/blog/2014-12-04-its-impossible-conduct-research-without-software-say-7-out-10-uk-researchers">seven out of ten UK researchers report that their work would be impossible without it</a>.
+</p>
+<p>
+The <a href="http://www.ed.ac.uk/information-services/research-support/research-data-service">Research Data Service</a> is a suite of tools and support for University staff and students to aid them in data management planning, working with data, sharing and preserving their data, and re-skilling. It is delivered by a virtual team spanning across a number of sections of Information Services including EDINA and Data Library, Library & University Collections, IT Infrastructure, User Services, and the Digital Curation Centre.
+</p> 
+<p>
+We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
+
+Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
 
 <!--
@@ -190,6 +199,11 @@ and the administrator will contact you if we need any extra information.</h4>
   for more information.
 </p>
 
+<h2>Surveys</h2>
+<!-- DO NOT EDIT SURVEY LINKS -->
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+<p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
+<p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
 <hr/>
 
 <!--
@@ -199,38 +213,40 @@ and the administrator will contact you if we need any extra information.</h4>
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2 id="schedule">Schedule</h2>
-
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
-<div class="row">
-  <div class="col-md-6">
+<h2>Schedule</h2>
+<div class="row-fluid">
+  <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Welcome and setup</td> </tr>
+      <tr> <td>09:30</td> <td>Caveats of working with data in spreadsheets</td> </tr>
+      <tr> <td>10:00</td> <td>Introduction to Open Refine</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>11:00</td> <td>Working with Open Refine</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Introduction to data manipulation with R - part 1</td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:30</td> <td>Introduction to data manipulation with R - part 2</td> </tr>
+      <tr> <td>17:00</td> <td>Close</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+  <div class="span6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Data visualisation with R - part 1</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>11:00</td> <td>Data visualisation with R - part 2</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Introduction to data manipulation with SQL - part 1</td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:30</td> <td>Introduction to data manipluation with SQL - part 2</td> </tr>
+      <tr> <td>16:30</td> <td>Wrap-up and feedback</td> </tr>
+      <tr> <td>17:00</td> <td>Close</td> </tr>
     </table>
   </div>
 </div>
+
+<hr/>
 
 <!--
   ETHERPAD
@@ -247,8 +263,8 @@ and the administrator will contact you if we need any extra information.</h4>
   e.g., '2015-06-10-esu'.
 -->
 {% if page.etherpad %}
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+<p>
+  <strong>Hackpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
@@ -275,92 +291,25 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <h2 id="syllabus">Syllabus</h2>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_pages}}/matlab-novice-inflammation/reference/">Reference...</a></li>
-     </ul>
-   </div>
-   -->
-</div>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+<h2>Syllabus</h2>
+
+<div class="row-fluid">
+  <div class="span6"> 
+    
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
+      <li><a href="http://datacarpentry.github.io/spreadsheet-ecology-lesson/">Spreadsheets</a></li>
+      <li><a href="http://datacarpentry.github.io/OpenRefine-ecology/">Open Refine</a></li>
+      <li><a href="http://datacarpentry.github.io/R-ecology/">Data manipulation and visualisation with R</a></li>
+      <li><a href="http://datacarpentry.github.io/sql-ecology/">Data manipulation with SQL</a></li>
+      
     </ul>
   </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
-    </ul>
-  </div>
+ 
 </div>
 
 <hr/>
+
 
 <!--
   SETUP
