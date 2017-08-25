@@ -1,0 +1,468 @@
+---
+layout: workshop      # DON'T CHANGE THIS.
+root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
+carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "University of Edinburgh, King's Buildings, JCMB"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Room 3217, James Clerk Maxwell Building, Peter Guthrie Tait Road, Edinburgh, EH9 3FD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "UK"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "55.9215522,-3.1749893"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "May 9-10, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-05-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2017-05-10        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Juan Herrera", "Manos Farsarakis", "Mike Jackson", "Rupert Nash"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Arno Proeme", "Alexey Tarutin", "Edward Wallace", "Michael Spencer", "Simon Waldman", "Steve CARLYSLE-DAVIES"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["support@archer.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad: https://hackpad.com/2017-05-09-edinburgh-jQyqxOVZDdW         # optional: URL for the workshop Etherpad if there is one
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+---
+
+<!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
+
+<!--
+  HEADER
+
+  Edit the values in the block above to be appropriate for your workshop.
+  If the value is not 'true', 'false', 'null', or a number, please use
+  double quotation marks around the value, unless specified otherwise.
+  And run 'tools/check' *before* committing to make sure that changes are good.
+-->
+
+<!--
+  EVENTBRITE
+
+  This block includes the Eventbrite registration widget if
+  'eventbrite' has been set in the header.  You can delete it if you
+  are not using Eventbrite, or leave it in, since it will not be
+  displayed if the 'eventbrite' field in the header is not set.
+-->
+{% if page.eventbrite %}
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="248px"
+  scrolling="auto">
+</iframe>
+{% endif %}
+
+<!--
+<h4>This is the workshop template.  Use it to create your own website.
+Delete these lines and please fill in 
+<a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
+and the administrator will contact you if we need any extra information.</h4>
+-->
+
+<h2 id="general">General Information</h2>
+
+<!--
+  INTRODUCTION
+
+  Edit the general explanatory paragraph below if you want to change
+  the pitch.
+-->
+<p>
+  <a href="{{site.swc_site}}">Software Carpentry</a>
+  aims to help researchers get their work done
+  in less time and with less pain
+  by teaching them basic research computing skills.
+</p>  
+<p>
+  This workshop is hosted by EPCC, Edinburgh Parallel Computing Centre, and organised in collaboration by ARCHER, the Software Sustainability Institute, and UoE Research Data Service.
+</p>
+<p>
+  <a href="http://www.archer.ac.uk">ARCHER</a>, the UK's national
+  supercomputing service, offers training in software development and
+  high-performance computing to scientists and researchers across the
+  UK. As part of our training service we are running a two-day Data
+  Carpentry workshop. 
+</p>
+<p>
+  The <a href="http://www.software.ac.uk">Software Sustanability Institute</a>'s mission is to cultivate better, more sustainable, research software to enable world-class research (<a href="http://softwaresaved.spreadshirt.co.uk/"><em>better software, better research</em></a>). Software is fundamental to research: <a href="http://www.software.ac.uk/blog/2014-12-04-its-impossible-conduct-research-without-software-say-7-out-10-uk-researchers">seven out of ten UK researchers report that their work would be impossible without it</a>.
+</p>
+<p>
+The <a href="http://www.ed.ac.uk/information-services/research-support/research-data-service">Research Data Service</a> is a suite of tools and support for University staff and students to aid them in data management planning, working with data, sharing and preserving their data, and re-skilling. It is delivered by a virtual team spanning across a number of sections of Information Services including EDINA and Data Library, Library & University Collections, IT Infrastructure, User Services, and the Digital Curation Centre.
+</p>
+
+<p>
+  
+  This hands-on workshop will cover basic concepts and tools,
+  including program design, version control, data management,
+  and task automation.
+  Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+<p align="center">
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
+</p>
+
+<!--
+  AUDIENCE
+
+  Explain who your audience is.  (In particular, tell readers if the
+  workshop is only open to people from a particular institution.
+-->
+<p id="who">
+  <strong>Who:</strong>
+  The course is aimed at graduate students and other researchers.
+  <strong>You don't need to have any previous knowledge of the tools that will
+    be presented at the workshop.</strong>
+</p>
+
+<!--
+  LOCATION
+
+  This block displays the address and links to maps showing directions
+  if the latitude and longitude of the workshop have been set.  You
+  can use http://itouchmap.com/latlong.html to find the lat/long of an
+  address.
+-->
+{% if page.latlng %}
+<p id="where">
+  <strong>Where:</strong>
+  {{page.address}}.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+</p>
+{% endif %}
+
+<!--
+  SPECIAL REQUIREMENTS
+
+  Modify the block below if there are any special requirements.
+-->
+<p id="requirements">
+  <strong>Requirements:</strong> Participants must bring a laptop with a
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
+  on. They should have a few specific software packages installed (listed
+  <a href="#setup">below</a>). They are also required to abide by
+  Software Carpentry's
+  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+</p>
+
+<!--
+  ACCESSIBILITY
+
+  Modify the block below if there are any barriers to accessibility or
+  special instructions.
+-->
+<p id="accessibility">
+  <strong>Accessibility:</strong> We are committed to making this workshop
+  accessible to everybody.
+  The workshop organisers have checked that:
+</p>
+<ul>
+  <li>The room is wheelchair / scooter accessible.</li>
+  <li>Accessible restrooms are available.</li>
+</ul>
+<p>
+  Materials will be provided in advance of the workshop and
+  large-print handouts are available if needed by notifying the
+  organizers in advance.  If we can help making learning easier for
+  you (e.g. sign-language interpreters, lactation facilities) please
+  <a href="mailto:{{page.contact}}">get in touch</a> and we will
+  attempt to provide them.
+</p>
+
+<!--
+  CONTACT EMAIL ADDRESS
+
+  Display the contact email address set in the configuration file.
+-->
+<p id="contact">
+  <strong>Contact</strong>:
+  Please email
+  {% if page.contact %}
+    {% for contact in page.contact %}
+      {% if forloop.last and page.contact.size > 1 %}
+        or
+      {% else %}
+        {% unless forloop.first %}
+        ,
+        {% endunless %}
+      {% endif %}
+      <a href='mailto:{{contact}}'>{{contact}}</a>
+    {% endfor %}
+  {% else %}
+    to-be-announced
+  {% endif %}
+  for more information.
+</p>
+
+<hr/>
+
+<h2>Registration</h2>
+<p>
+To register, or to get more information, please, visit the <a
+href="http://www.archer.ac.uk/training/">ARCHER training page</a>.
+You can also register directly <a href="https://events.prace-ri.eu/event/612/registration/register#/register">here</a>.
+</p>
+
+
+<!-- DO NOT EDIT SURVEY LINKS -->
+<h2>Surveys</h2>
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+
+<hr/>
+
+
+<!--  
+SCHEDULE
+  Show the workshop's schedule.  Edit the items and times in the table
+  to match your plans.  You may also want to change 'Day 1' and 'Day
+  2' to be actual dates or days of the week.
+-->
+
+<h2>Schedule</h2>
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>9:00</td> <td>Welcome and set-up</td> </tr>
+      <tr> <td>9:30</td> <td>Version control with Git</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>11:00</td> <td>Version control with Git</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Automating tasks with Make</td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:30</td> <td>Automating tasks with Make</td> </tr>
+      <tr> <td>17:00</td> <td>Close</td> </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>9:00</td> <td>Python</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>11:00</td> <td>Python</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td> <td>Python</td> </tr>
+      <tr> <td><em>15:00</em></td> <td><em>Coffee break</em></td> </tr>
+      <tr> <td>15:30</td> <td>Python</td> </tr>
+      <tr> <td>16:30</td> <td>Wrap-up and feedback</td> </tr>
+      <tr> <td>17:00</td> <td>Close</td> </tr>
+    </table>
+  </div>
+</div>
+<hr/>
+
+
+<!--
+  ETHERPAD
+
+  At `_misc/etherpad.txt` you will find a template for the etherpad.
+
+  Display the Etherpad for the workshop.  You can set this up in
+  advance or on the first day; either way, make sure you push changes
+  to GitHub after you have its URL.  To create an Etherpad, go to
+
+      http://pad.software-carpentry.org/YYYY-MM-DD-site
+
+  where 'YYYY-MM-DD-site' is the identifier for your workshop,
+  e.g., '2015-06-10-esu'.
+-->
+
+{% if page.etherpad %}
+<p>
+  <strong>Hackpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this hackpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+<hr/>
+
+<h2>Syllabus</h2>
+
+<div class="row-fluid">
+  <div class="span6"> 
+    <h3>Version Control with Git</h3>
+    <ul>
+      <li>Creating a repository</li>
+      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignoring files</li>
+      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolving conflicts</li>
+      <li>Open licenses</li>
+      <li>Where to host work, and why</li>
+      <li><a href="http://hpcarcher.github.io/git-novice/">Reference...</a></li>
+    </ul>
+  </div>
+  
+  <div class="row-fluid">
+  <div class="span6"> 
+    <h3>Automating tasks with Make</h3>
+    <ul>
+      <li>Make is not just for compiling code</li>
+      <li>Basic Tasks</li>
+      <li>Automatic Variables and Wildcards</li>
+      <li>Patterns</li>
+      <li>Variables</li>
+      <li><a href="http://swcarpentry.github.io/make-novice/">Reference...</a></li>
+    </ul>
+  </div>
+    
+  <div class="span6">
+    <h3>Building programs with Python</h3>
+    <ul>
+      <li>Using libraries</li>
+      <li>Working with arrays</li>
+      <li>Reading and plotting data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code>, ...</li>
+      <li>Defensive programming</li>
+      <li>Using Python from the command line</li>
+      <li><a href="http://swcarpentry.github.io/python-novice-inflammation/">Reference...</a></li>
+    </ul>
+  </div>
+</div>
+<!--  
+  <div class="span6">
+    <h3>Data Management with SQL</h3>
+    <ul>
+      <li>Introduction to SQL</li>
+      <li>Basic Queries</li>
+      <li>Aggregation</li>
+      <li>Joins and aliases</li>
+      <li><a href="http://www.datacarpentry.org/sql-ecology-lesson/">Reference...</a></li>
+     </ul>
+  </div>
+</div>
+-->
+
+<hr/>
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your workshop.
+    (In particular, most workshops teach either Python or R, not both.)
+-->
+
+<h2>Setup</h2>
+
+<p>
+  To participate in a Software Carpentry workshop, 
+  you will need working copies of the software described below.
+  Please make sure to install everything
+  (or at least to download the installers)
+  <em>before</em> the start of your workshop.
+</p>
+
+{% include setup.html %}
+
+<h2>Check your setup</h2>
+
+<p>
+  To check you have the necessary software and tools:
+</p>
+<ul>
+  <li>
+    Download <a href="./setup/swc-installation-test-2.py">swc-installation-test-2.py</a>
+  </li>
+  <li>Open up a bash shell</li>
+  <li>Change into the directory where you put the script</li>
+  <li>Run the script:
+    <pre>python swc-installation-test-2.py</pre>
+  </li>
+</ul>
+
+<hr/>
+
+<h2>Recognising prompts and how to exit</h2>
+
+<p>
+If you find yourself in a shell that you don't recognise, or in an editor that you can't get out of then see <a href="novice/ref/05-prompts-exits.html">Recognising prompts and how to exit</a>.
+</p>
+
+<hr/>
+
+<h2>Useful links</h2>
+
+
+<p>
+Software Carpentry online lessons:
+</p>
+<ul>
+<li><a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
+<li><a href="http://swcarpentry.github.io/python-novice-inflammation/">Programming with Python</a></li>
+<li><a href="http://swcarpentry.github.io/make-novice/">Automating tasks with make</a></li>
+<li><a href="http://swcarpentry.github.io/sql-novice-survey/">Databases and SQL</a></li>
+</ul>
+<p>
+Git:
+</p>
+<ul>
+<li>
+GitHub <a href="https://try.github.io/levels/1/challenges/1">interactive Git tutorials</a>
+</li>
+<li>
+<a href="http://justinhileman.info/article/git-pretty/">Git pretty</a> - a flowchart about how to recover from mistakes.
+</li>
+<a href="https://presentate.com/bobthecow/talks/changing-history">Changing History, or How to Git pretty</a> - slides relating to the above.
+</li>
+</ul>
+<p>
+Python:
+</p>
+<ul>
+<li>
+<a href="http://matplotlib.org/gallery.html">matplotlib examples gallery</a> - includes source code.
+</li>
+<li>
+<a href="http://wiki.scipy.org/Cookbook">SciPy Cookbook</a> - examples of how to do useful stuff using numpy, scipy, matplotlib, interfacing, etc.
+</li>
+<li>
+Scientific Python <a href="http://scipy-lectures.github.io/">lecture notes</a></li>
+</ul>
+<p>
+Training:
+</p>
+<ul>
+<li>
+<a href="http://www.archer.ac.uk/training/">ARCHER Training</a> - free HPC training all over the UK.
+</li>
+<li>
+<a href="http://www.codecademy.com/">Code Academy</a> - free online programming courses</a>
+</li>
+</ul>
+<p>
+Papers:
+</p>
+<p>
+Wilson G, Aruliah DA, Brown CT, Chue Hong NP, Davis M, et al. (2014)  
+Best Practices for Scientific Computing. PLoS Biol 12(1): e1001745. <a 
+href="http://dx.doi.org/10.1371/journal.pbio.1001745">doi:10.1371/journal.pbio.1001745</a>.
+</p>
+<p>
+Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for  
+Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. 
+<a 
+href="http://dx.doi.org/10.1371/journal.pcbi.1003285">doi:10.1371/journal.pcbi.1003285</a>.
+</p>
+<p>
+Noble WS (2009) A Quick Guide to Organizing Computational Biology 
+Projects. PLoS Comput Biol 5(7): e1000424. <a 
+href="http://dx.doi.org/10.1371/journal.pcbi.1000424">doi:10.1371/journal.pcbi.1000424</a>.
+</p>
+<p>
+Ram K (2013) "git can facilitate greater reproducibility and increased
+transparency in science", Source Code for Biology and Medicine 2013,
+8:7 <a
+href="http://dx.doi.org/10.1186/1751-0473-8-7">doi:10.1186/1751-0473-8-7</a>.
+</p>
+<p>
+Glass, R. (2002) Facts and Fallacies of Software Engineering, Addison-Wesley, 2002. (<a href="http://ff.tu-sofia.bg/~bogi/France/SoftEng/books/Addison%20Wesley%20-%20Robert%20L%20Glass%20-%20Facts%20and%20Fallacies%20of%20Software%20Engineering.pdf">PDF</a>).
+</p>
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
